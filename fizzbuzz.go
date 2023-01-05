@@ -18,5 +18,9 @@ func Fizzbuzz(input string) (output string) {
 	if (inputNum % 5 == 0) {
 		output += "buzz" 
 	}
-	return output
+
+	if output == "" {
+		output = "not fizzy or buzzy"
+	}
+	return
 }

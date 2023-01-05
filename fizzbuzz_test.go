@@ -36,3 +36,12 @@ func TestFizzbuzz_NOT_Divisible_By_5_AND_3(t *testing.T) {
 		t.Errorf("actual %s, expected %s", actual, expected)
 	}
 }
+
+func TestFizzbuzz_NOT_Number(t *testing.T) {
+	actual := Fizzbuzz("abc")
+	expected := "abc"
+
+	if actual != expected {
+		t.Errorf("actual %s, expected %s", actual, expected)
+	}
+}

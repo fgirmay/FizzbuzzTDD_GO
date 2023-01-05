@@ -1,14 +1,14 @@
 package main
 
 import (
-	"log"
+	"fmt"
 	"strconv"
 )
 
 func Fizzbuzz(input string) (output string) {
 	inputNum, err := strconv.Atoi(input)
 	if err != nil {
-		log.Fatalf("%v is not a number", input)
+		fmt.Printf("%v is not a number\n", input)
 		return input
 	}
 

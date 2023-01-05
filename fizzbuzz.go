@@ -13,7 +13,10 @@ func Fizzbuzz(input string) (output string) {
 	}
 
 	if inputNum % 3 == 0 {
-		output = "fizz"
+		output += "fizz"
+	}
+	if (inputNum % 5 == 0) {
+		output += "buzz" 
 	}
 	return output
 }
